@@ -26,8 +26,9 @@ const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
   pingTimeout: 60000,
+  allowEIO3: true,
   cors: {
-    origin: "*",
+    origin: true,
     credentials: true,
   },
 });
@@ -37,7 +38,7 @@ app.set("io", io); // using set method to mount the `io` instance on the app to 
 // global middlewares
 app.use(
   cors({
-    origin: "*",
+    origin: true,
     credentials: true,
   })
 );
