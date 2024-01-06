@@ -12,6 +12,7 @@ Clone the repository using Git:
 git clone https://github.com/your-username/chat-application.git
 cd chat-application/backend
 npm install
+-create a .env file backend
 MONGODB_URI=<Your MongoDB URI>
 PORT=8080
 ACCESS_TOKEN_SECRET=<Your_Access_Token_Secret>
